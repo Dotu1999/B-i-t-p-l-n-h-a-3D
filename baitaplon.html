@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello Triangle</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <div>
+      <span>Đổi màu cho các mặt lập phương, lightColor và ambientLight :</span>
+      <select id="color">
+        <option value="front" selected>Front</option>
+        <option value="back" >Back</option>
+        <option value="up">Up</option>
+        <option value="dow">Dow</option>
+        <option value="right">Right</option>
+        <option value="left">Left</option>
+        <option value="lightColor">LightColor</option>
+        <option value="ambientLight">AmbientLight</option>
+      </select>
+      <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+      <button id="change_colors"> Change</button>
+    </div>
+    <div>
+       <span>Thay đổi điểm nhìn :</span><br>
+       <span>X:</span>
+       <input id="page_x" type="text" value="1.0">
+       <span>Y:</span>
+       <input id="page_y" type="text" value="1.0">
+       <span>Z:</span>
+       <input id="page_z" type="text" value="3.0">
+       <button id="change_view" type="button">Change</button>
+    </div><br>
+    <div>
+       <span>Thay đổi vị trí nguồn sáng :</span><br>
+       <span>X:</span>
+       <input id="light_position_x" type="text" value="2.3">
+       <span>Y:</span>
+       <input id="light_position_y" type="text" value="4.0">
+       <span>Z:</span>
+       <input id="light_position_z" type="text" value="3.5">
+       <button id="change_light_position" type="button">Change</button>
+    </div><br>
+    <div>
+       <span>Thay đổi trục quay :</span><br>
+       <span>X1:</span>
+       <input id="page_x1" type="text" value="0.0">
+       <span>Y1:</span>
+       <input id="page_y1" type="text" value="0.0">
+       <span>Z1:</span>
+       <input id="page_z1" type="text" value="0.0">
+       <span>To</span><br>
+       <span>X2:</span>
+       <input id="page_x2" type="text" value="1.0">
+       <span>Y2:</span>
+       <input id="page_y2" type="text" value="1.0">
+       <span>Z2:</span>
+       <input id="page_z2" type="text" value="1.0">
+       <button id="change_rotate" type="button">Change</button>
+    </div><br>
+    <div>
+      <input type="checkbox" id="rotate" name="vehicle1"  value="check">
+      <label >Xoay hình lập phương</label><br>
+    </div>
+    <script src="cuon-matrix.js"></script>
+    <script src="cuon-utils.js"></script>
+    <script src="webgl-debug.js"></script>
+    <script src="webgl-utils.js"></script>
+    <script src="Baitaplon.js"></script>
+  </body>
+</html>
